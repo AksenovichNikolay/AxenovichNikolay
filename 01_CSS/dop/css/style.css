@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 .letter{
     width: 600px;
+    border: double;
 }
 .headLetter{
     text-align: right;
 }
 .bodyLetter{
-
+    text-indent: 20px;
+    font-family: 'Marck Script', cursive;
+    font-size: 17px;
 }
 .footerLetter{
 
 }
 .adress{
     font-style: italic;
+}
+.hello{
+    text-decoration: underline;
+    font-style: inherit;
+    font-weight :bold;
 }
