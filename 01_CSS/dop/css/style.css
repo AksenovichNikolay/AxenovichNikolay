@@ -1,0 +1,15 @@
+.letter{
+    width: 600px;
+}
+.headLetter{
+    text-align: right;
+}
+.bodyLetter{
+
+}
+.footerLetter{
+
+}
+.adress{
+    font-style: italic;
+}
