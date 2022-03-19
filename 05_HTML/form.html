@@ -43,8 +43,8 @@
             <fieldset>
                 <legend>Авторизируйтесь</legend>
                     <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
-                        <span><input type="text" name="login" value="" required>* Логин</span>
-                        <span><input type="password" name="password" value="" required>* Пароль</span><br>
+                        <label><input type="text" name="login" value="" required>* Логин</label>
+                        <label><input type="password" name="password" value="" required>* Пароль</label><br>
                         <input type="radio" name="check_leave" value="leave">Оставаться в системе <br>
                         <input type="submit" value="Войти"><br>
                         <i>* - обязательное поле</i>
@@ -74,8 +74,8 @@
             <fieldset>
                 <legend>Оставьте Ваш отзыв</legend>
                     <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
-                        <span><input type="text" name="name" value="" required>* Имя</span>
-                        <span><input type="email" name="e-mail" value="" required>* e-mail</span><br>
+                        <label><input type="text" name="name" value="" required>* Имя</label>
+                        <label><input type="email" name="e-mail" value="" required>* e-mail</label><br>
                         <textarea name="review">Форма отправки</textarea>
                         <p><input type="submit" value="Отправить"></p>
                     </form>
@@ -118,7 +118,7 @@
                 <legend>Строка поиска</legend>
                     <form action="http://fe.it-academy.by/TestForm.php" target="_blank">
                         <span>Файл:</span><br>
-                        <span><input type="file" name="file1"></span><br>
+                        <label><input type="file" name="file1"></label><br>
                         <span>Срок хранения (года):</span><br>
                         <input name="years" pattern="[0-9]{2}"><input type="submit" value="загрузить"><br>
                         <span><i>Метод POST</i></span><br>
