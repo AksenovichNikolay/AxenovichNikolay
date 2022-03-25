@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <style>
+body {
+    font-size: 13px;
+    text-align: center;
+  }
+  .wrap {
+    display: inline-block;
+    margin-top: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+  ul {
+    list-style: none;
+    position: relative;
+    text-align: left;
+  }
+
+  li {
+    float: left;
+  }
+  ul:after {
+    clear: both;
+  }
+  ul:before,
+  ul:after {
+      content: " ";
+      display: table;
+  }
+  nav {
+    position: relative;
+    background-color: gray;
+    text-align: center;
+  }
+  ul.primary li a {
+    display: block;
+    padding: 20px 30px;
+    border-right: 1px solid #3D3D3D;
+  }
+  ul.sub {
+    position: absolute;
+    z-index: 2;
+    width: 35%;
+    display:none;
+  }
+
+  ul.sub li {
+    float: none;
+    margin: 0;
+  }
+  ul.sub li a {
+    color: #000;
+    padding: 15px 30px;
+  }
+  ul.sub li:last-child a {
+    border-bottom: none;
+  }
+  ul.sub li a:hover {
+    color: #000;
+    background: #eeeeee;
+  }
+  ul.primary li:hover ul {
+    display: block;
+  }
+  ul.primary li:hover a {
+    background: #fff;
+    color: #666;
+  }
+  ul.primary li:hover > a{
+    color: #000;
+}
+  @media only screen and (max-width: 860px) {
+.wrap {
+    width: 40%;
+    margin-top: 0px;
+    margin-left: -200px;
+    height: auto;
+    }
+
+    li {
+    float: none;
+    }
+    ul.primary li:hover a {
+    background: none;
+    color: #fff7f7;
+    }
+    ul.sub {
+    display: none;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -28%;
+    box-shadow: none;
+    width: 50%;
+    border: #3D3D3D;
+    background-color: #000;
+    }
+    ul.sub li a:hover {
+    color: #ccc;
+    background: none;
+    }
+  }
+
+
+    </style>
+</head>
+<body>
+<body>
+    <div class="wrap">
+        <nav>
+          <ul class="primary">
+            <li>
+              <a href="">Понедельник</a>
+              <ul class="sub">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Вторник</a>
+              <ul class="sub">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Среда</a>
+              <ul class="sub">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Четверг</a>
+              <ul class="sub">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Пятница</a>
+              <ul class="sub">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="">Суббота</a>
+                <ul class="sub">
+                  <li><a href="#">Завтрак</a></li>
+                  <li><a href="#">Обед</a></li>
+                  <li><a href="#">Ужин</a></li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+        </div>
+</body>
+</html>
+</body>
+</html>
