@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base 1</title>
+    <style>
+        thead{
+            background-color: #666666;
+        }
+        tr:nth-child(2n){
+            background: lightgray;
+        }
+        td{
+            border: 2px dotted black;
+        }
+        td:nth-child(1){
+            border-left: none;
+        }
+        td:nth-last-child(1){
+            border-right: none;
+        }
+        td.footer{
+            background: none;
+            border: none;
+            text-align: center;
+        }
+        td.footer:hover{
+            background: none;
+            border: none;
+            text-align: center;
+        }
+        table tbody tr:hover{
+            background: darkorange;
+            color: dodgerblue;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <thead>
+      <tr>
+        <th>ФИО</th>
+        <th>пол</th>
+        <th>должность</th>
+        <th>дата рож.</th>
+        <th>Данные 01</th>
+        <th>Данные 02</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Иванов Иван Иванович</td>
+        <td>м</td>
+        <td>Начальник</td>
+        <td>01.02.2000</td>
+        <td>51665165</td>
+        <td>42453</td>
+      </tr>
+      <tr>
+        <td>Петров Петр Петрович</td>
+        <td>м</td>
+        <td>секретарь</td>
+        <td>02.03.1995</td>
+        <td>42545</td>
+        <td>687525</td>
+      </tr>
+      <tr>
+        <td>Сидоров Александ Игоревич</td>
+        <td>м</td>
+        <td>водитель</td>
+        <td>06.07.1963</td>
+        <td>452452</td>
+        <td>52314</td>
+      </tr>
+      <tr>
+        <td>Фёдоров Федор Федорович</td>
+        <td>м</td>
+        <td>каратист</td>
+        <td>12.11.1987</td>
+        <td>120345</td>
+        <td>67867</td>
+      </tr>
+      <tr>
+        <td>Пупин Петя Васютин</td>
+        <td>м</td>
+        <td>охранник</td>
+        <td>30.01.1955</td>
+        <td>786775</td>
+        <td>457865</td>
+      </tr>
+    </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="footer">ДАННЫЕ О СОТРУДНИКАХ</td>
+            </tr>
+        </tfoot>
+</table>
+    <button>
+        Показать скрытые элементы
+    </button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('td').on("click", function(){
+            $(this).parent('tr').css("display", "none");
+        });
+        $('button').on("click", function(){
+            $("tr").css("display", "table-row");
+        });
+    </script>
+</body>
+</html>
